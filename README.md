@@ -17,7 +17,7 @@ Weather4Cast is a user-friendly, responsive web application that provides real-t
 - **Deployment**: [Cloudflare](https://www.cloudflare.com/) Pages for hosting
 ## How to Use
 ##### 1. You can easily open the [Weather4cast](https://weather4cast-viewer.pages.dev/) application through your web browser using the link or clicking the app name in the header - (https://weather4cast-viewer.pages.dev/)
-##### 2. Grant permission for the app to access your location. If issues arise be ensure to check your browser privacy setting.
+##### 2. Grant permission for the app to access your location. If issues arise be sure to check your browser privacy setting.
 ##### 3. App will display the current weather information based on your geolocation.
 ## Contributing
 
