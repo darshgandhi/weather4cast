@@ -1,0 +1,134 @@
+:root {
+  --font-size-large: 24px; /* For larger text like titles */
+  --font-size-medium: 18px; /* For medium emphasis text */
+  --font-size-small: 14px; /* For general small text */
+  --font-size-extra-small: 10px; /* For very small text like AM/PM */
+  --font-size-extra-large: 5rem; /* For prominent weather display */
+  --font-size-super-large: 10rem; /* For main temperature display */
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.locationInfo {
+  padding: 0;
+}
+
+.location {
+  font-size: var(--font-size-large);
+  padding: 0;
+}
+
+.dateTime {
+  font-size: var(--font-size-small);
+  margin-top: -20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.typeIcon {
+  display: flex;
+  align-items: center; /* Center align vertically */
+  justify-content: center; /* Center content horizontally */
+  gap: 0.5rem; /* Space between icon and text */
+  padding-top: 0.5rem;
+  padding-bottom: 0; /* Removed negative padding */
+  font-size: var(--font-size-large);
+}
+
+.mainInfo {
+  display: flex;
+  align-items: center; /* Center align vertically */
+  justify-content: center; /* Center content horizontally */
+  gap: 0.25rem; /* Space between number and degree */
+  padding: 0; /* Simplified spacing */
+  margin: 0;
+  text-align: center;
+}
+
+.mainInfo .currentWeather {
+  font-size: var(--font-size-super-large);
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  line-height: 1; /* Ensure no extra spacing */
+  position: relative;
+}
+
+.mainInfo .degree {
+  font-size: var(--font-size-extra-large);
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  align-self: flex-start; /* Align degree at the top */
+  position: relative;
+  top: -0.5rem; /* Adjust vertical position slightly */
+}
+
+.H,
+.L {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--font-size-small);
+  margin: 1rem 0 1.5rem; /* Shorthand for top and bottom margins */
+}
+
+.border {
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to bottom right, rgba(89, 92, 255, 0.75), rgba(198, 219, 255, 0.75));
+  padding: 1rem;
+}
+
+.weekView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+
+.hourView {
+  text-align: center;
+  padding: 0 10px; /* Simplified horizontal padding */
+  margin: 2px;
+  border-radius: 5px;
+  /* background-color: rgba(54, 54, 54, 0.05); */
+}
+
+.hourViewTime {
+  margin: 1px 0 3px; /* Shorthand for margins */
+  font-weight: 700;
+  font-size: var(--font-size-medium);
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ampm {
+  font-size: var(--font-size-extra-small);
+  margin: 1px;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.hourViewNum {
+  margin: 1px 0 2px; /* Shorthand for margins */
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Ensure content is aligned properly */
+  font-size: var(--font-size-medium);
+}
+
+.hourView span {
+  margin: 2px 0 1px; /* Shorthand for margins */
+  display: block;
+  font-size: var(--font-size-large);
+}
